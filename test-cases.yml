@@ -1,0 +1,290 @@
+- summary: |
+    Проверка возможности соревноваться с ботом без авторизации
+  requirement: |
+    Пользователь может провести соревнование без авторизации
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Try simple battle]
+  expected-result: |
+    Открылась страница состязания
+    
+- summary: |
+    Проверка возможности авторизации через email/пароль
+  requirement: |
+    Пользователь может авторизоваться через существующую связку email/пароль
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Ввести email/пароль
+    - Кликнуть Submit
+  expected-result: |
+    Успешная авторизация
+    
+- summary: |
+    Проверка возможности авторизации через email/пароль
+  requirement: |
+    Пользователь не может авторизоваться через несуществующую связку email/пароль
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Ввести email/пароль, которого нет в базе
+    - Кликнуть Submit
+  expected-result: |
+    EMAIL_NOT_FOUND
+
+- summary: |
+    Проверка валидации полей авторизации через email/пароль
+  requirement: |
+    Введенные значения в полях должны валидироваться 
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Ввести некорректный email, например "дыипшкфщпм фпгрвм"
+    - Не вводить пароль
+  expected-result: |
+    - Invalid email
+    - Password required
+
+- summary: |
+    Проверка возможности авторизации через Github
+  requirement: |
+    Пользователь может авторизоваться через сквозную авторизацию через GitHub 
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Кликнуть на [Sign in with Github]
+    - Ввести логин/пароль от GitHub в окне авторизации
+    - Нажать Sign in
+    - Выдать разрешение на привязку
+  expected-result: |
+    Успешная авторизация
+
+- summary: |
+    Проверка возможности авторизации через Discord
+  requirement: |
+    Пользователь может авторизоваться через сквозную авторизацию через Discord 
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Кликнуть на [Sign in with Discord]
+    - Ввести логин/пароль от Discord в окне авторизации
+    - Нажать Sign in
+    - Выдать разрешение на привязку
+  expected-result: |
+    Успешная авторизация
+
+
+- summary: |
+    Проверка восстановления пароля 
+  requirement: |
+    Пользователь может восстановить пароль через форму восстановления пароля на странице авторизации
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Кликнуть на Forgot your password? 
+    - Ввести свой email
+    - Нажать Submit
+    - Перейти в указанную почту 
+    - Перейти по ссылке восстановления 
+    - Ввести новый пароль
+    - Авторизоваться с новыми данными 
+  expected-result: |
+    Успешная смена пароля
+    
+- summary: |
+    Проверка восстановления пароля 
+  requirement: |
+    Пользователь не может восстановить пароль через форму восстановления пароля на странице авторизации с несуществующим email
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Кликнуть на Forgot your password? 
+    - Ввести несуществующий email
+    - Нажать Submit
+  expected-result: |
+    Email not found
+
+- summary: |
+    Проверка восстановления пароля 
+  requirement: |
+    Пользователь может восстановить пароль через форму восстановления пароля на странице авторизации со старым паролем
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign in]
+    - Кликнуть на Forgot your password? 
+    - Ввести свой email
+    - Нажать Submit
+    - Перейти в указанную почту 
+    - Перейти по ссылке восстановления 
+    - Ввести новый(старый) пароль
+    - Авторизоваться с новыми данными 
+  expected-result: |
+    Успешная смена пароля
+
+- summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    Пользователь может зарегистрироваться на сайте с помощью email/пароль
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Ввести Nickname, email, password и продублировать пароль в еще одно поле password
+    - Нажать Submit 
+  expected-result: |
+    Успешная регистрация
+
+- summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    Пользователь не может зарегистрироваться на сайте с помощью существующего email
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    email: kvskgd@gmail.com
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Ввести Nickname, email из test-data, password и продублировать пароль в еще одно поле password
+    - Нажать Submit 
+  expected-result: |
+    Email is already taken
+
+- summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    Пользователь не может зарегистрироваться на сайте с помощью существующего nickname
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    Nickname: Jumpy
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Ввести Nickname из test-data, email, password и продублировать пароль в еще одно поле password
+    - Нажать Submit 
+  expected-result: |
+    Nickname is already taken
+    
+- summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    Пользователь не может зарегистрироваться на сайте, указав пароль меньше 6 и больше 16 символов
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Ввести Nickname, email, password "12345" и продублировать пароль в еще одно поле password
+    - Нажать Submit 
+  expected-result: |
+    Should be from 6 to 16 characters
+
+- summary: |
+    Проверка регистрации пользователя 
+  requirement: |
+    Пользователь не может зарегистрироваться на сайте, указав разные пароли
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Ввести Nickname, email, password "12345" и другой пароль в еще одно поле password
+    - Нажать Submit 
+  expected-result: |
+    Passwords must match
+
+- summary: |
+    Проверка возможности авторизации через Github со страницы регистрации
+  requirement: |
+    Пользователь может авторизоваться через сквозную авторизацию через GitHub 
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Кликнуть на [Sign in with Github]
+    - Ввести логин/пароль от GitHub в окне авторизации
+    - Нажать Sign in
+    - Выдать разрешение на привязку
+  expected-result: |
+    Успешная авторизация
+
+- summary: |
+    Проверка возможности авторизации через Discord со страницы регистрации
+  requirement: |
+    Пользователь может авторизоваться через сквозную авторизацию через Discord 
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]
+    - Кликнуть на [Sign in with Discord]
+    - Ввести логин/пароль от Discord в окне авторизации
+    - Нажать Sign in
+    - Выдать разрешение на привязку
+  expected-result: |
+    Успешная авторизация
+
+- summary: |
+    Проверка возможности перехода на страницу регистрации/авторизации со страницы авторизации/регистрации
+  requirement: |
+    Пользователь может со страницы авторизации/регистрации на страницу регистрации/авторизации
+  prerequisites: |
+    Пользователь не авторизован 
+  test-data: |
+    -
+  steps:
+    - Зайти на https://codebattle.hexlet.io/
+    - Кликнуть на [Sign up]/[Sign in]
+    - Кликнуть на [Have not an account? Sign Up]/Have not an account? Sign in]
+  expected-result: |
+    Открылась страница регистрации/авторизации
+
