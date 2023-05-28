@@ -346,3 +346,724 @@
   expected-result: |
    Не появилось модальное окно с предложением установить расширение 
 
+- summary: |
+    Проверка отображения окна для входа в игру 
+  requirement: |
+    Пользователь имеет возможность создать игру 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+  expected-result: |
+   Отображается модальное окно создания игры
+
+- summary: |
+    Проверка отображения окна для входа в игру 
+  requirement: |
+    Пользователь имеет возможность создать игру 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+  expected-result: |
+   Отображается модальное окно создания игры
+
+- summary: |
+    Проверка выбора сложности игры
+  requirement: |
+    Пользователь имеет возможность создать игру определенной сложности
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать 1-ю сложность (1 звезда)
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка выбора сложности игры
+  requirement: |
+    Пользователь имеет возможность создать игру определенной сложности
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать 2-ю сложность (2 звезды)
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка выбора сложности игры
+  requirement: |
+    Пользователь имеет возможность создать игру определенной сложности
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать 3-ю сложность (3 звезды)
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+
+- summary: |
+    Проверка выбора сложности игры
+  requirement: |
+    Пользователь имеет возможность создать игру определенной сложности
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать 4-ю сложность (4 звезды)
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка выбора типа игры 
+  requirement: |
+    Пользователь имеет возможность создать игру определенного типа 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать тип [With other users]
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка выбора типа игры 
+  requirement: |
+    Пользователь имеет возможность создать игру определенного типа 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать тип [With a friend]
+    - Выбрать пользователя из появившегося дропдауна 'Choose opponent'
+    - Нажать [Create Invite]
+  expected-result: |
+    Приглашение отправилось
+
+- summary: |
+    Проверка выбора типа игры 
+  requirement: |
+    Пользователь имеет возможность создать игру определенного типа 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать тип [With a bot]
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+
+- summary: |
+    Проверка работы ползунка выбора времени игры
+  requirement: |
+    Пользователь имеет возможность выбрать минимальную продолжительность игры  
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Сдвинуть ползунок в минимальное положение 3 минуты
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка работы ползунка выбора времени игры
+  requirement: |
+    Пользователь имеет возможность выбрать максимальную продолжительность игры  
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Сдвинуть ползунок в максимальное положение 60 минут
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась
+
+- summary: |
+    Проверка работы выбора задания для игры
+  requirement: |
+    Пользователь имеет возможность выбрать тематику задания для игры
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать любое задание из дропдауна заданий или выбрать random task 
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась с выбранной тематикой
+
+- summary: |
+    Проверка работы выбора тегов тематики для игры
+  requirement: |
+    Пользователь имеет возможность фильтровать тематику задания для игры с помощью тегов
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать любой тег
+    - Раскрыть дродаун с тематиками
+  expected-result: |
+    Отображаются тематики, исходя из выбранного тега 
+
+- summary: |
+    Проверка работы выбора тегов тематики для игры
+  requirement: |
+    Взаимоисключающие теги нельзя выбрать вместе
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Выбрать тег math
+  expected-result: |
+    Тег hash-maps недоступен для выбора
+
+- summary: |
+    Проверка работы запуска игры
+  requirement: |
+    При запуске игры пользователь должен видеть превью игры
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+  expected-result: |
+    Отображается превью игры с аватарами игроков, их ЯП и рейтинг 
+
+- summary: |
+    Проверка работы подсказок при первом запуске игры
+  requirement: |
+    При запуске игры пользователь должен видеть подсказки
+  prerequisites: |
+    - Пользователь авторизован, в local storage нет guideGamePassed = true
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+  expected-result: |
+    Отображается модальное окно с подсказками
+
+
+- summary: |
+    Проверка отсутствия подсказок 
+  requirement: |
+    При запуске игры пользователь не должен видеть подсказки, если уже их просматривал или закрывал
+  prerequisites: |
+    - Пользователь авторизован, в local storage есть guideGamePassed = true
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+  expected-result: |
+    Не отображается модальное окно с подсказками
+
+- summary: |
+    Проверка отсутствия подсказок 
+  requirement: |
+    При запуске игры пользователь не должен видеть подсказки, если уже их просматривал или закрывал
+  prerequisites: |
+    - Пользователь авторизован, в local storage есть guideGamePassed = true
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+  expected-result: |
+    Не отображается модальное окно с подсказками
+
+- summary: |
+    Проверка отображения задания для игры
+  requirement: |
+    При запуске игры пользователь должен видеть задание для игры 
+  prerequisites: |
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+  expected-result: |
+    - Вкладка TASK открыта по умолчанию
+    - Отображается сложность задания, его название и текст
+    - Отображается пример валидации данных
+    - Отображаются аватары пользователей, кто участвовал в составлении задания
+    - Отображается ссылка на репозиторий с заданием 
+
+
+- summary: |
+    Проверка кликабельности аватарова пользователей
+  requirement: |
+    При клике на аватар пользователь должен перейти на страницу пользователя на GitHub
+  prerequisites: |
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть на аватар пользователя на вкладке TASK под 'This users have contributed to this task:'
+  expected-result: |
+    - Открылась страница пользователя на GitHub
+
+- summary: |
+    Проверка отображения output в игры
+  requirement: |
+    При запуске игры пользователь должен видеть вывод результата работы его кода
+  prerequisites: |
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Выбрать любой язык программирования, например python
+    - Ввести любой текст в код, например "имшфыимдфы"
+    - Кликнуть [Check solution] или Ctrl + e
+    - Кликнуть Output
+  expected-result: |
+    - Отображается прогресс прохода автотестов
+    - Отображается результат
+    - Отображается список тестов с результатом
+    - Отображается кнопка сворачивания/разворачивания логов
+
+
+- summary: |
+    Проверка отображения таймера
+  requirement: |
+    При запуске игры пользователь должен видеть таймер продолжительности игры 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Сдвинуть ползунок в любое положение минут
+    - Нажать [Create Battle]
+  expected-result: |
+    Игра создалась, отображается таймер игры, который соответствует выбранному времени 
+
+- summary: |
+    Проверка работы таймера
+  requirement: |
+    При окончании таймера игра должна закончиться 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Сдвинуть ползунок в минимальное положение минут
+    - Нажать [Create Battle]
+    - Дождаться окончания таймера
+  expected-result: |
+    Игра закончилась, отображается результат игры
+
+- summary: |
+    Проверка работы выбора языка программирования для игры 
+  requirement: |
+    Пользователь может выбрать определенный язык программирования для игры
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Раскрыть дропдаун с выбором языков программирования
+    - Выбрать нужный язык
+    - Отправить задание на проверку 
+  expected-result: |
+    - В поле для ввода появился скелетон, на выбранном ЯП
+    - Задание на языке валидируется
+
+- summary: |
+    Проверка работы vim
+  requirement: |
+    Пользователь может войти в редактор vim
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть на [Vim]
+  expected-result: |
+    - Заработал текстовый редактор vim в поле ввода 
+
+- summary: |
+    Проверка работы переключения темной/светлой темы редактора
+  requirement: |
+    Пользователь может сменить цветовую тему редактора
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть на [Light]
+    - Кликнуть на [Dark]
+  expected-result: |
+    - Сменилась темная тема на светлую, белый текст стал темным
+    - Сменилась светлая тема на темную, темный текст стал светлым
+    
+- summary: |
+    Проверка работа кнопки [Сдаться]
+  requirement: |
+    Пользователь может сдаться в любой момент игры 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть [Сдаться](Иконка с флагом)
+    - Кликнуть Give UP
+  expected-result: |
+    - Отображаются результаты игры 
+    
+- summary: |
+    Проверка работа кнопки [Сдаться]
+  requirement: |
+    Пользователь может отменить решение о сдаче 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть [Сдаться](Иконка с флагом)
+    - Кликнуть [Cancel]
+  expected-result: |
+    - Игра продолжается
+
+- summary: |
+    Проверка работа кнопки [Refresh]
+  requirement: |
+    Пользователь может вернуть состояние текстового поля в дефолт
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Ввести какой-нибудь текст в поле для ввода 
+    - Кликнуть [Refresh](иконка цикла)
+  expected-result: |
+    - Поле вернулось к исходному состоянию начала игры
+
+- summary: |
+    Проверка работа кнопки [Check solution]
+  requirement: |
+    Пользователь может отправить выполненное задание на проверку автотестов
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Ввести какой-нибудь текст в поле для ввода 
+    - Кликнуть [Check solution](иконка Play)
+  expected-result: |
+    - Открылась вкладка Output
+    - Отображается результат проверки 
+    - Победа в игре
+
+- summary: |
+    Проверка работа кнопки [Смена языка]
+  requirement: |
+    Пользователь может сменить язык задания и заголовков
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Выбрать язык в селекторе    
+  expected-result: |
+    - Язык сменился на выбранный
+
+- summary: |
+    Проверка работа кнопки [Show guide]
+  requirement: |
+    Пользователь может обратиться к подсказкам в любой момент
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Кликнуть на [Show guide]   
+  expected-result: |
+    - Отображается модальное окно с подсказками
+
+- summary: |
+    Проверка отправки сообщения в чат
+  requirement: |
+    Пользователь может Отправить сообщение в чат с соперником
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Ввести текст в поле для ввода текста в чате 
+    - Нажать ENTER или [Send] 
+  expected-result: |
+    - Сообщение отображается в чате
+    
+- summary: |
+    Проверка отправки эмодзи в чат
+  requirement: |
+    Пользователь может Отправить эмодзи в чат с соперником 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Выбрать любой эмодзи из списка 
+    - Нажать ENTER или [Send] 
+  expected-result: |
+    - Эмодзи отображается в чате
+  
+- summary: |
+    Проверка отправки эмодзи в чат
+  requirement: |
+    Пользователь может Отправить эмодзи в чат с соперником 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game]
+    - Нажать [Create Battle]
+    - Выбрать любой эмодзи из списка 
+    - Нажать ENTER или [Send] 
+  expected-result: |
+    - Эмодзи отображается в чате
+
+- summary: |
+    Проверка получения сообщения в чат
+  requirement: |
+    Пользователь может получать и видеть сообщения, отправленные ему в чат
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game] 
+    - Выбрать тип игры с другом
+    - Пригласить свою вторую учетку 
+    - Принять приглашение
+    - Написать что-то в чате со второй учетки
+  expected-result: |
+    - Сообщения отображаются в чате
+
+- summary: |
+    Проверка отображения статистики игрока
+  requirement: |
+    Пользователь может видеть свою и чужую статистику во время игры
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game] 
+    - Нажать [Create Battle]
+    - Навести курсор мыши на свой или чужой никнейм
+  expected-result: |
+    - Отображается тултип с информацией об игроке и его статистике
+
+- summary: |
+    Проверка отображения написания кода другим игроков или ботом
+  requirement: |
+    Пользователь может видеть чужое написание кода в лайв режиме
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game] 
+    - Нажать [Create Battle]
+    - Наблюдать за полем ввода кода другого игрока
+  expected-result: |
+    - Появляется код другого игрока в поле для ввода
+
+- summary: |
+    Проверка отображения истории состязания
+  requirement: |
+    Пользователь может просмотреть историю состязания во время игры
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game] 
+    - Нажать [Create Battle]
+    - Вставить любой текст в поле для ввода кода 
+    - Нажать [Open history]
+    - Поскроллить ползунок плеера в нужный момент состязания 
+  expected-result: |
+    - Ползунок перемещается, отображается разное состояние поля для ввода текстом с контентом, который соответствует временному промежутку
+
+- summary: |
+    Проверка возможности рематча
+  requirement: |
+    Пользователь может переиграть с этим же соперником после результата игры
+  prerequisites: |
+    - Пользователь авторизован, игра окончена  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Дождаться завершения игры 
+    - Нажать Rematch, если соперник не вышел из игры 
+  expected-result: |
+    - Начнется новая игра с новым таймером и заданием
+
+- summary: |
+    Проверка возможности перейти на домашнюю страницу со страницы игры
+  requirement: |
+    Пользователь может перейти на домашнюю страницу со страницы игры 
+  prerequisites: |
+    - Пользователь авторизован  
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Кликнуть на [Create a game] 
+    - Нажать [Create Battle]
+    - Кликнуть [Back to Home]
+  expected-result: |
+    - Откроется домашняя страница
+
+
