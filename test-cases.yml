@@ -362,237 +362,55 @@
    Отображается модальное окно создания игры
 
 - summary: |
-    Проверка выбора 1 сложности игры
-  requirement: |
-    Пользователь имеет возможность создать игру определенной сложности
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать 1-ю сложность (1 звезда)
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка выбора 2 сложности игры
-  requirement: |
-    Пользователь имеет возможность создать игру определенной сложности
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать 2-ю сложность (2 звезды)
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка выбора 3 сложности игры
-  requirement: |
-    Пользователь имеет возможность создать игру определенной сложности
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать 3-ю сложность (3 звезды)
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-
-- summary: |
-    Проверка выбора 4 сложности игры
-  requirement: |
-    Пользователь имеет возможность создать игру определенной сложности
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать 4-ю сложность (4 звезды)
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка выбора 1 типа игры 
-  requirement: |
-    Пользователь имеет возможность создать игру определенного типа 
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать тип [With other users]
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка выбора 2 типа игры 
-  requirement: |
-    Пользователь имеет возможность создать игру определенного типа 
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать тип [With a friend]
-    - Выбрать пользователя из появившегося дропдауна 'Choose opponent'
-    - Нажать [Create Invite]
-  expected-result: |
-    Приглашение отправилось
-
-- summary: |
-    Проверка выбора 3 типа игры 
-  requirement: |
-    Пользователь имеет возможность создать игру определенного типа 
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать тип [With a bot]
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-
-- summary: |
-    Проверка работы минимального положения ползунка выбора времени игры
-  requirement: |
-    Пользователь имеет возможность выбрать минимальную продолжительность игры  
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Сдвинуть ползунок в минимальное положение 3 минуты
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка работы максимального положения ползунка выбора времени игры
-  requirement: |
-    Пользователь имеет возможность выбрать максимальную продолжительность игры  
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Сдвинуть ползунок в максимальное положение 60 минут
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась
-
-- summary: |
-    Проверка работы выбора задания для игры
-  requirement: |
-    Пользователь имеет возможность выбрать тематику задания для игры
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать любое задание из дропдауна заданий или выбрать random task 
-    - Нажать [Create Battle]
-  expected-result: |
-    Игра создалась с выбранной тематикой
-
-- summary: |
-    Проверка работы выбора тегов тематики для игры
-  requirement: |
-    Пользователь имеет возможность фильтровать тематику задания для игры с помощью тегов
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать любой тег
-    - Раскрыть дродаун с тематиками
-  expected-result: |
-    Отображаются тематики, исходя из выбранного тега 
-
-- summary: |
-    Проверка работы выбора тегов тематики для игры
-  requirement: |
-    Взаимоисключающие теги нельзя выбрать вместе
-  prerequisites: |
-    - Пользователь авторизован  
-  test-data: |
-    - Login: Kvskgd@gmail.com
-    - Pass: Rainbow7!
-  steps:
-    - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Кликнуть на [Create a game]
-    - Выбрать тег math
-  expected-result: |
-    Тег hash-maps недоступен для выбора
-
-- summary: |
-    Проверка работы настройки вида игры без указания тегов
+    Проверка работы настройки вида игры с тегом strings и рандомным заданием
   requirement: |
     Пользователь может настроить игру под себя перед тем, как ее начать 
   prerequisites: |
-    - Пользователь авторизован  
+    - Пользователь авторизован
   test-data: |
     - Login: Kvskgd@gmail.com
     - Pass: Rainbow7!
   steps:
     - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Выбрать первую сложность
-    - Выбрать "Play with bot"
-    - Сдвинуть ползунок в минимальное положение 
-    - Выбрать add_two_number
+    - Нажать [Create a game]
+    - Выбрать 1-ю сложность
+    - Выбрать "With other users"
+    - Сдвинуть ползунок времени в минимальное положение 
+    - Выбрать тег strings
+    - Нажать [Create battle]
   expected-result: |
     - Выбранные настройки зафиксированы и отображаются
-    - Теги задизейблены
-
+    - Теги в состоянии выбора
+    - Игра появилась в лобби 
 
 - summary: |
-    Проверка работы настройки вида игры с указанием тегов
+    Проверка работы настройки вида игры с тегом math и рандомным заданием
   requirement: |
     Пользователь может настроить игру под себя перед тем, как ее начать 
   prerequisites: |
-    - Пользователь авторизован с 2 учеток
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+    - Pass: Rainbow7!
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Нажать [Create a game]
+    - Выбрать 2-ю сложность
+    - Выбрать "With other users"
+    - Сдвинуть ползунок времени в положение 20 минут
+    - Выбрать тег math
+    - Нажать [Create battle]
+  expected-result: |
+    - Выбранные настройки зафиксированы и отображаются
+    - Теги в состоянии выбора
+    - Игра появилась в лобби 
+
+- summary: |
+    Проверка работы настройки вида игры с тегом hash-maps, рандомным заданием и другом
+  requirement: |
+    Пользователь может настроить игру под себя перед тем, как ее начать 
+  prerequisites: |
+    - Пользователь авторизован
   test-data: |
     - Login: Kvskgd@gmail.com
     - Pass: Rainbow7!
@@ -600,25 +418,67 @@
     - Pass: Rainbow7!
   steps:
     - Зайти в лобби https://codebattle.hexlet.io/#lobby
-    - Выбрать 3 сложность
-    - Выбрать "With friend"
-    - Выбрать свое вторуб учетку для инвайта
-    - Сдвинуть ползунок в максимальное положение 
-    - Выбрать теги hash-maps и collections
-    - Отправить инвайт
-    - Принять инвайт с другой четки
+    - Нажать [Create a game]
+    - Выбрать 3-ю сложность
+    - Выбрать "With a friend"
+    - Сдвинуть ползунок времени в положение 40 минут
+    - Выбрать тег hash-maps
+    - Пригласить свою вторую учетку 
+    - Принять приглашение
   expected-result: |
     - Выбранные настройки зафиксированы и отображаются
-    - Теги задизейблены
-    - Инвайт отправлен 
-    - Инвайт можно пришел 
+    - Теги в состоянии выбора
+    - Запустилась игра с другом
+    
+- summary: |
+    Проверка работы настройки вида игры с тегом collections, рандомным заданием и ботом
+  requirement: |
+    Пользователь может настроить игру под себя перед тем, как ее начать 
+  prerequisites: |
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Нажать [Create a game]
+    - Выбрать 4-ю сложность
+    - Выбрать "With a bot"
+    - Сдвинуть ползунок времени в положение 60 минут
+    - Выбрать тег collections
+    - Нажать [Create battle]
+  expected-result: |
+    - Выбранные настройки зафиксированы и отображаются
+    - Теги в состоянии выбора
+    - Запустилась игра
+
+- summary: |
+    Проверка работы настройки вида игры с тегом rest, выбранным заданием и любым типом
+  requirement: |
+    Пользователь может настроить игру под себя перед тем, как ее начать 
+  prerequisites: |
+    - Пользователь авторизован
+  test-data: |
+    - Login: Kvskgd@gmail.com
+  steps:
+    - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Нажать [Create a game]
+    - Выбрать любую сложность
+    - Выбрать "With a bot"
+    - Сдвинуть ползунок времени в любое положение
+    - Выбрать тег rest
+    - Выбрать игру age_to_days из дропдауна 
+    - Нажать [Create battle]
+  expected-result: |
+    - Выбранные настройки зафиксированы и отображаются
+    - Теги в состоянии выбора
+    - Запустилась игра
 
 - summary: |
     Проверка работы запуска игры
   requirement: |
     При запуске игры пользователь должен видеть превью игры
   prerequisites: |
-    - Пользователь авторизован  
+    - Пользователь авторизован
   test-data: |
     - Login: Kvskgd@gmail.com
     - Pass: Rainbow7!
