@@ -19,7 +19,7 @@
   prerequisites: |
     Пользователь не авторизован 
   test-data: |
-    -
+    - login: kvskgd@gmail.com, pass: Rainbow7!
   steps:
     - Зайти на https://codebattle.hexlet.io/
     - Кликнуть на [Sign in]
@@ -35,7 +35,7 @@
   prerequisites: |
     Пользователь не авторизован 
   test-data: |
-    -
+    - login: kvskgd1352353@gmail.com, pass: Rainbow7!
   steps:
     - Зайти на https://codebattle.hexlet.io/
     - Кликнуть на [Sign in]
@@ -68,7 +68,7 @@
   prerequisites: |
     Пользователь не авторизован, имеется аккаунт на Github
   test-data: |
-    -
+    - Githublogin: kvskgd@gmail.com, pass: Rainbow7!
   steps:
     - Зайти на https://codebattle.hexlet.io/
     - Кликнуть на [Sign in]
@@ -86,7 +86,7 @@
   prerequisites: |
     Пользователь не авторизован, имеется аккаунт на Discord
   test-data: |
-    -
+    - Discordlogin: kvskgd@gmail.com, pass: Rainbow7!
   steps:
     - Зайти на https://codebattle.hexlet.io/
     - Кликнуть на [Sign in]
@@ -624,6 +624,11 @@
     - Pass: Rainbow7!
   steps:
     - Зайти в лобби https://codebattle.hexlet.io/#lobby
+    - Выбрать 2 сложность
+    - Выбрать "With friend"
+    - Выбрать свое вторую учетку для инвайта
+    - Сдвинуть ползунок в середину 
+    - Выбрать теги hash-maps и collections
     - Кликнуть на [Create a game]
     - Нажать [Create Battle]
   expected-result: |
@@ -854,8 +859,8 @@
     - Ввести какой-нибудь код в поле для ввода, например print(f'Hello, world!')
     - Кликнуть [Check solution](иконка Play)
   expected-result: |
-    - Открылась вкладка Output
-    - Отображается результат проверки 
+    - Открылась вкладка Output c выводом Hello, world
+    - Отображается результат проверки /- Failure
 
 - summary: |
     Проверка работа кнопки [Смена языка] внутри игры
